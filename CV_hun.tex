@@ -15,15 +15,16 @@
 \usepackage{hyperref}
 
 \linespread{1.1}
+\setlength\parindent{0pt}
+\setlength{\parskip}{0.3cm}
 
 \newcommand\mail[1]{\href{mailto:#1}{\texttt{#1}}}
 
 \begin{document}
-{ \ }
-\\
+ \thispagestyle{empty}
+
 \textsc{Személyes}
- \vspace{0.3cm}
- \\
+
        \begin{tabular}{p{3cm}l}
 	       Név & Borbély Gábor \\
            Születési idő & 1989 március 23.\\
@@ -33,12 +34,10 @@
                   & \url{http://hlt.bme.hu/hu/gaebor} \\
                   & \url{https://github.com/gaebor}
        \end{tabular}
- \vspace{0.3cm}
- \\
+ 
  \textsc{Tanulmányok}
- \vspace{0.3cm}
- \\
-       \begin{tabular}{p{3cm}l}
+ 
+ \begin{tabular}{p{3cm}l}
 	       2003 -- 2007 & Lovassy László Gimnázium (matematika tagozat) \\
            2007 -- 2010& BME TTK, matematika Bsc, szakdolgozat: \\
 		              & Differenciálegyenletek Tanszék, Dr. Bálint Péter témavezetésével, \\
@@ -48,33 +47,16 @@
 						& \emph{Application of an Abstract Multiplier Method in Model Predictive Control}\\ & \emph{ with Guaranteed Cost} \\
 		   2013 -- 2016 & BME Matematika- és Számítástudományok Doktori Iskola (abszolvált)
        \end{tabular}
- \vspace{0.3cm}
- \\
+
  \textsc{Publikációk}
- \vspace{0.3cm}
- \\
+
         \begin{tabular}{p{3cm}l}
 	       lásd & \url{https://hlt.bme.hu/hu/gaebor} \\ 
-               &  \href{https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10043154}{mtmt}
-       \end{tabular}
- { \ }\\ 
-  \textsc{TDK}
- \vspace{0.3cm}
- \\
-        \begin{tabular}{p{3cm}l}
-		2010& Dr. Bálint Péter témavezetésével TTK kari TDK 2. helyezés, \\
-            & \emph{Statistical behaviour in the
-System of Two Falling Balls}\\
-		2011& Dr. Görög Péter témavezetésével, Borbély Dániellel és Koppányi Zoltánnal\\
-            & Geotechnika és geológia szekció 1. helyezett és TÁMOPT különdíj\\
-            & \emph{Töréskép optimalizálás: Elmélet, megvalósítás és alkalmazás}\\
-        2013& A fenti munkával OTDK, Műszaki Tudományi Szekció 3. helyezett.
-       \end{tabular}
-	\vspace{0.3cm}
- \\
+               &  \href{https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10043154}{\texttt{mtmt}}
+       \end{tabular}  
+
  \textsc{Munka}
- \vspace{0.3cm}
- \\
+
        \begin{tabular}{p{4cm}l}
 	       2010 ősz -- 2015 tavasz & Matematika A1, A2, A3 gyakorlatvezetés mérnököknek\\
            2011 tavasz  & Nokia Siemens Networks hálózat modellezési projekt részvétel\\ & a Matematika Intézeten keresztül. \\
@@ -83,18 +65,22 @@ System of Two Falling Balls}\\
            2017 február -- & Tanársegéd a BME Algebra tanszéken \\
            2017 nyár & SignAll projekt
        \end{tabular}
- \vspace{0.3cm}
- \\
- \newpage
-  \noindent\textsc{Egyéb}
- \vspace{0.3cm}
- \\
-        \begin{tabular}{p{3cm}l}
-	       program ismeretek &  C, C++ (GNU és Visual C++, STL és OpenCv függvénykönyvtár), Matlab, \\
+ 
+ \textsc{Technikai ismeretek}
+
+    \begin{tabular}{p{3cm}l}
+	       programozás & bash, C, C++ (GNU és Visual C++, STL és OpenCv függvénykönyvtár), Matlab, \\
                              & Wolfram Mathematica, \LaTeX, Python 2 és 3 (numpy és theano függvénykönyvtár) \\
+           eszközök & Docker, Git, MS Teams, Visual Studio \\
            nyelv & angol: középfokú nyelvvizsga, szakirodalom olvasása és cikkírás, \\
-                 & német: alapszint\\
-		   közösségi tevékenység  & 2011 ősszel Az Egyetemi Mászókör (öntevékeny kör) elnöke \\
-                                  & 2015-ben Mensa tag
-       \end{tabular}
+                 & német: alapszint
+   \end{tabular}
+   
+ \textsc{Egyéb}
+ 
+    \begin{tabular}{l}
+        fal- és sziklamászás\\
+        2011 ősszel Az Egyetemi Mászókör (öntevékeny kör) elnöke \\
+        2015-ben Mensa tag
+   \end{tabular}
 \end{document}

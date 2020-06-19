@@ -15,15 +15,16 @@
 \usepackage{hyperref}
 
 \linespread{1.1}
+\setlength\parindent{0pt}
+\setlength{\parskip}{0.3cm}
 
 \newcommand\mail[1]{\href{mailto:#1}{\texttt{#1}}}
 
 \begin{document}
-{ \ }
-\\
+ \thispagestyle{empty}
+ 
 \textsc{Personal info}
- \vspace{0.3cm}
- \\
+
        \begin{tabular}{p{3cm}l}
 	       Name & Gábor Borbély\\
            Date of birth & March 23, 1989\\
@@ -33,11 +34,9 @@
                   & \url{http://hlt.bme.hu/en/gaebor} \\
                   & \url{https://github.com/gaebor}
        \end{tabular}
- \vspace{0.3cm}
- \\
+
  \textsc{Education}
- \vspace{0.3cm}
- \\
+
        \begin{tabular}{p{3cm}l}
 	       2003 -- 2007 & Lovassy László High school (faculty of mathematics) \\
            2007 -- 2010& BME faculty of natural sciences, Mathematics Bsc, \\
@@ -48,21 +47,16 @@
 						& \emph{Application of an Abstract Multiplier Method in Model Predictive Control}\\ & \emph{ with Guaranteed Cost} \\
 		    2013 -- 2016 & BME Doctoral School of Mathematics and Computer Science (ABD)
        \end{tabular}
- \vspace{0.3cm}
- \\
+
  \textsc{Publications}
- \vspace{0.3cm}
- \\
+
         \begin{tabular}{p{3cm}l}
 	       see & \url{https://hlt.bme.hu/en/gaebor} \\ 
-               &  \href{https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10043154}{mtmt}
+               &  \href{https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10043154}{\texttt{mtmt}}
        \end{tabular}
- \vspace{0.3cm}
- \thispagestyle{empty}
- { \ } \\
+
  \textsc{Employments}
- \vspace{0.3cm}
- \\
+
        \begin{tabular}{p{4cm}l}
 	       2010 fall -- 2015 & Mathematics curses for engineers at BME\\
            2011 spring  & participant of network modelling project at Nokia Siemens Networks. \\
@@ -71,18 +65,23 @@
            2017 February -- & Lecturer at BME Department of Algebra \\
            2017 summer & SignAll project
        \end{tabular}
- \vspace{0.3cm}
- \\
- \textsc{Others}
- \vspace{0.3cm}
- \\
-        \begin{tabular}{p{3cm}l}
-	       Program Languages &  C, C++ (GNU and Visual C++, STL and OpenCv library), Matlab, \\
-                             & Wolfram Mathematica, \LaTeX, Python 2 and 3 (numpy and theano libraries)\\
-           Foreign Languages & english: intermediate level exam,\\
-                &reading and writing of scientific literature, \\
-                & german: beginner\\
-		   Out-of-school & president of the university climbing club in the fall of 2011\\
-                & member of Mensa HungarIQa in 2015
-       \end{tabular}
+
+ \textsc{Skills}
+
+        \begin{tabular}{>{\raggedright\arraybackslash}p{3cm}l}
+	       Programming &  bash, C, C++ (GNU and Visual C++, STL and OpenCv library), Matlab, \\
+             & Wolfram Mathematica, \LaTeX, Python 2 and 3 (numpy and theano libraries)\\
+           Tools & Docker, Git, MS Teams, Visual Studio \\
+           Languages & Hungarian: native, \\
+                    & English: intermediate level exam, reading and writing of scientific literature, \\
+                    & German: beginner
+        \end{tabular}
+ 
+ \textsc{Other}
+ 
+ \begin{tabular}{l}
+        rock and indoor climbing\\
+        president of the university climbing club in the fall of 2011\\
+        member of Mensa HungarIQa in 2015
+    \end{tabular}
 \end{document}
