@@ -1,5 +1,8 @@
 name: pdflatex
-on: push
+on:
+  push:
+    branches:
+      - master
 jobs:
   pdflatex:
     runs-on: ubuntu-latest
