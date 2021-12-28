@@ -1,0 +1,20 @@
+name: pdflatex
+on: push
+jobs:
+  pdflatex:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install
+      run: sudo apt install texlive-latex-base texlive-lang-european
+    - uses: actions/checkout@v2
+    - name: Compile
+      run: bash compile.sh
+    - name: Commit changes
+      run: |
+        git add CV_*.pdf
+        if [ ! "`git status --short CV_*.pdf`" ]; then exit 0; fi
+        git config --global user.name 'Bot of github.com/gaebor/CV'
+        git config --global user.email 'bot-of-gaebor-cv@users.noreply.github.com'
+        git commit -m "pdf of commit `git log -n 1 --pretty=format:%H`" CV_*.pdf
+        git push
+ 
