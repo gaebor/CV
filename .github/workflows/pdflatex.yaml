@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Install
-      run: sudo apt --no-install-recommends install texlive-latex-extra texlive-lang-european
+      run: sudo apt --no-install-recommends install texlive-latex-extra texlive-fonts-recommended texlive-lang-european
     - uses: actions/checkout@v2
     - name: Compile
       run: bash compile.sh
